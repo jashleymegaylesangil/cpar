@@ -239,6 +239,23 @@
 
         .card-content { padding: 1.5rem; }
 
+        /* --- Artist placeholders (face + sample works) --- */
+        .artist-profile { text-align: center; }
+        .artist-face {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            background: #eee;
+        }
+        .artist-face img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        .artist-works { display: flex; gap: 0.75rem; margin-top: 1rem; }
+        .artist-works img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; flex: 1; }
+
         .card h3 {
             color: var(--secondary);
             margin-bottom: 0.5rem;
@@ -463,27 +480,58 @@
 
         <div class="grid-container">
             <div class="card anim-on-scroll">
-                <div class="card-content">
+                <div class="card-content artist-profile">
+                    <div class="artist-face">
+                        <img src="vicente.jfif" alt="Vicente S. Manansala face">
+                    </div>
                     <h3>Vicente S. Manansala</h3>
                     <p><strong>National Artist.</strong> Known for transparent cubism, merging rural Filipino life with modern themes.</p>
+                    <div class="artist-works">
+                        <img src="va1.Jpeg" alt="Artwork 1">
+                        <img src="va2.Jpeg" alt="Artwork 2">
+                    </div>
                 </div>
             </div>
+
             <div class="card anim-on-scroll">
-                <div class="card-content">
+                <div class="card-content artist-profile">
+                    <div class="artist-face">
+                        <img src="juanf.jpg" alt="Juan C. Flores face">
+                    </div>
                     <h3>Juan C. Flores</h3>
                     <p><strong>Master Woodcarver.</strong> "Apung Juan" helped establish Betis as a renowned center for crafting santos.</p>
+                    <div class="artist-works">
+                        <img src="ja1.jpg" alt="Artwork 1">
+                        <img src="ja2.jpg" alt="Artwork 2">
+                    </div>
                 </div>
             </div>
+
             <div class="card anim-on-scroll">
-                <div class="card-content">
+                <div class="card-content artist-profile">
+                    <div class="artist-face">
+                        <img src="rus.png" alt="Ruston Banal face">
+                    </div>
                     <h3>Ruston Banal</h3>
                     <p><strong>Photographer.</strong> Documents Kapampangan culture, rituals, and identity through visual storytelling.</p>
+                    <div class="artist-works">
+                        <img src="ra1.jpg" alt="Artwork 1">
+                        <img src="ra2.jpg" alt="Artwork 2">
+                    </div>
                 </div>
             </div>
+
             <div class="card anim-on-scroll">
-                <div class="card-content">
+                <div class="card-content artist-profile">
+                    <div class="artist-face">
+                        <img src="will.jpg" alt="Willy Layug face">
+                    </div>
                     <h3>Willy Layug</h3>
                     <p><strong>Sculptor.</strong> His large-scale religious pieces blend classical techniques with modern approaches.</p>
+                    <div class="artist-works">
+                        <img src="wa1.jpg" alt="Artwork 1">
+                        <img src="wa2.png" alt="Artwork 2">
+                    </div>
                 </div>
             </div>
         </div>
